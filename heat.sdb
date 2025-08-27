@@ -1,0 +1,935 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18m121b1 ]
+[d frameptr 6 ]
+<<<<<<< HEAD
+"5 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+=======
+"5 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[e E518 . `uc
+HEAT_MODE_OFF 0
+HEAT_MODE_HALF 1
+HEAT_MODE_ON 2
+]
+<<<<<<< HEAD
+"24 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+=======
+"24 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[e E3 . `uc
+SYSTEM_OFF 0
+SYSTEM_ON 1
+]
+"74
+[e E467 . `uc
+MODE_INITIAL 0
+MODE_A 1
+MODE_B 2
+MODE_C 3
+]
+<<<<<<< HEAD
+"6 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"6 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[e E491 . `uc
+DIRECTION_FORWARD 0
+DIRECTION_REVERSE 1
+]
+"7
+[e E495 . `uc
+MODE_INITIAL 0
+MODE_A 1
+MODE_B 2
+MODE_C 3
+]
+"8
+[e E501 . `uc
+SPEED_85 0
+SPEED_70 1
+SPEED_100 2
+SPEED_COUNT 3
+]
+"12
+[e E507 . `uc
+MODE_STATE_RUNNING 0
+MODE_STATE_STOPPED 1
+]
+<<<<<<< HEAD
+"209
+=======
+"210
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[e E3 . `uc
+SYSTEM_OFF 0
+SYSTEM_ON 1
+]
+"6 E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+<<<<<<< HEAD
+"12 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+=======
+"12 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _hardware_set_heat hardware_set_heat `(v  1 e 1 0 ]
+"34
+[v _hardware_pwm_control hardware_pwm_control `(v  1 e 1 0 ]
+[v i1_hardware_pwm_control hardware_pwm_control `(v  1 e 1 0 ]
+"44
+[v _hardware_set_half_power hardware_set_half_power `(v  1 e 1 0 ]
+"73
+[v _hardware_stop_heat hardware_stop_heat `(v  1 e 1 0 ]
+[v i1_hardware_stop_heat hardware_stop_heat `(v  1 e 1 0 ]
+"82
+[v _Heat_Init Heat_Init `(v  1 e 1 0 ]
+"94
+[v _Heat_Start Heat_Start `(v  1 e 1 0 ]
+"102
+[v _Heat_Stop Heat_Stop `(v  1 e 1 0 ]
+[v i1_Heat_Stop Heat_Stop `(v  1 e 1 0 ]
+"113
+[v _Heat_SetMode Heat_SetMode `(v  1 e 1 0 ]
+"122
+[v _Heat_Toggle Heat_Toggle `(v  1 e 1 0 ]
+"145
+[v _HEAT_EnergySave HEAT_EnergySave `(v  1 e 1 0 ]
+<<<<<<< HEAD
+"13 C:\Users\Administrator\Desktop\+++最终版本+++\inital.c
+=======
+"13 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\inital.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _inital inital `(v  1 e 1 0 ]
+"56
+[v _T0_sysinitial T0_sysinitial `(v  1 e 1 0 ]
+"73
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+<<<<<<< HEAD
+"8 C:\Users\Administrator\Desktop\+++最终版本+++\key_1.c
+=======
+"8 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\key_1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _keymode0_configuration keymode0_configuration `(v  1 e 1 0 ]
+"34
+[v _keymode1_configuration keymode1_configuration `(v  1 e 1 0 ]
+"53
+[v _keymode2_configuration keymode2_configuration `(v  1 e 1 0 ]
+"72
+[v _keymode3_configuration keymode3_configuration `(v  1 e 1 0 ]
+"91
+[v _DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+[v i1_DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+"96
+[v _key_scan key_scan `(v  1 e 1 0 ]
+"171
+[v _key_tick key_tick `(v  1 e 1 0 ]
+<<<<<<< HEAD
+"5 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+=======
+"5 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"30
+[v _main main `(v  1 e 1 0 ]
+"124
+[v _System_GetState System_GetState `(E3  1 e 1 0 ]
+<<<<<<< HEAD
+"130
+[v _System_TimerHandler System_TimerHandler `(v  1 e 1 0 ]
+"156
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+"29 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"129
+[v _System_TimerHandler System_TimerHandler `(v  1 e 1 0 ]
+"155
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+"29 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _hardware_stop_motor hardware_stop_motor `(v  1 s 1 hardware_stop_motor ]
+[v i1_hardware_stop_motor hardware_stop_motor `(v  1 s 1 i1_hardware_stop_motor ]
+"41
+[v _hardware_set_motor hardware_set_motor `(v  1 s 1 hardware_set_motor ]
+[v i1_hardware_set_motor hardware_set_motor `(v  1 s 1 i1_hardware_set_motor ]
+"62
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+"84
+[v _Motor_Start Motor_Start `(v  1 e 1 0 ]
+[v i1_Motor_Start Motor_Start `(v  1 e 1 0 ]
+"93
+[v _Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+[v i1_Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+"102
+[v _Motor_ToggleDirection Motor_ToggleDirection `(v  1 e 1 0 ]
+[v i1_Motor_ToggleDirection Motor_ToggleDirection `(v  1 e 1 0 ]
+"115
+[v _Motor_ToggleSpeed Motor_ToggleSpeed `(v  1 e 1 0 ]
+<<<<<<< HEAD
+"143
+[v _Motor_GetMode Motor_GetMode `(E467  1 e 1 0 ]
+"153
+[v _Motor_SetMode Motor_SetMode `(v  1 e 1 0 ]
+"206
+[v _Motor_Process Motor_Process `(v  1 e 1 0 ]
+"15 C:\Users\Administrator\Desktop\+++最终版本+++\pwm.c
+=======
+"144
+[v _Motor_GetMode Motor_GetMode `(E467  1 e 1 0 ]
+"154
+[v _Motor_SetMode Motor_SetMode `(v  1 e 1 0 ]
+"207
+[v _Motor_Process Motor_Process `(v  1 e 1 0 ]
+"15 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\pwm.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _nPWM1 nPWM1 `(v  1 e 1 0 ]
+[v i1_nPWM1 nPWM1 `(v  1 e 1 0 ]
+"38
+[v _nPWM2 nPWM2 `(v  1 e 1 0 ]
+[v i1_nPWM2 nPWM2 `(v  1 e 1 0 ]
+"12 E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\include\hc18m121b1.h
+[v _INDF INDF `VEuc  1 e 1 @0 ]
+"13
+[v _T0 T0 `VEuc  1 e 1 @1 ]
+"16
+[v _FSR FSR `VEuc  1 e 1 @4 ]
+"20
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"21
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"22
+[v _IOCA IOCA `VEuc  1 e 1 @7 ]
+"24
+[v _IOCB IOCB `VEuc  1 e 1 @9 ]
+"27
+[v _PDCON PDCON `VEuc  1 e 1 @11 ]
+"28
+[v _PHCON PHCON `VEuc  1 e 1 @13 ]
+"32
+[v _PMCON PMCON `VEuc  1 e 1 @64 ]
+"33
+[v _OPTION OPTION `VEuc  1 e 1 @65 ]
+"34
+[v _PDCON1 PDCON1 `VEuc  1 e 1 @66 ]
+"35
+[v _PHCON1 PHCON1 `VEuc  1 e 1 @67 ]
+"36
+[v _TRISA TRISA `VEuc  1 e 1 @69 ]
+"37
+[v _TRISB TRISB `VEuc  1 e 1 @70 ]
+"39
+[v _PMADRL PMADRL `VEuc  1 e 1 @71 ]
+"40
+[v _PMADRH PMADRH `VEuc  1 e 1 @72 ]
+"41
+[v _PMDATL PMDATL `VEuc  1 e 1 @73 ]
+"42
+[v _PMDATH PMDATH `VEuc  1 e 1 @74 ]
+"44
+[v _T1CR_AUXR T1CR_AUXR `VEuc  1 e 1 @75 ]
+"45
+[v _T1CON T1CON `VEuc  1 e 1 @76 ]
+"46
+[v _T1 T1 `VEuc  1 e 1 @77 ]
+"47
+[v _T1LOAD T1LOAD `VEuc  1 e 1 @78 ]
+"48
+[v _PWM0P PWM0P `VEuc  1 e 1 @79 ]
+"50
+[v _T2CON T2CON `VEuc  1 e 1 @80 ]
+"51
+[v _TMR2H TMR2H `VEuc  1 e 1 @81 ]
+"52
+[v _T2 T2 `VEuc  1 e 1 @82 ]
+"53
+[v _T2LOAD T2LOAD `VEuc  1 e 1 @83 ]
+"54
+[v _PWM1P PWM1P `VEuc  1 e 1 @84 ]
+"55
+[v _PWMSET PWMSET `VEuc  1 e 1 @85 ]
+"56
+[v _ANSELL ANSELL `VEuc  1 e 1 @86 ]
+"57
+[v _ANSELH ANSELH `VEuc  1 e 1 @87 ]
+"58
+[v _ADRESL ADRESL `VEuc  1 e 1 @88 ]
+"60
+[v _ADRESH ADRESH `VEuc  1 e 1 @89 ]
+"61
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @90 ]
+"62
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @91 ]
+"64
+[v _OCCUPY0BE OCCUPY0BE `VEuc  1 e 1 @190 ]
+"65
+[v _OCCUPY0BF OCCUPY0BF `VEuc  1 e 1 @191 ]
+"82
+[v _PORTA4 PORTA4 `VEb  1 e 0 @44 ]
+"84
+[v _PORTA6 PORTA6 `VEb  1 e 0 @46 ]
+"85
+[v _PORTA7 PORTA7 `VEb  1 e 0 @47 ]
+"87
+[v _PORTB0 PORTB0 `VEb  1 e 0 @48 ]
+"145
+[v _T0IE T0IE `VEb  1 e 0 @112 ]
+"148
+[v _T0IF T0IF `VEb  1 e 0 @115 ]
+"151
+[v _GIE GIE `VEb  1 e 0 @119 ]
+"165
+[v _RD_FLAG RD_FLAG `VEb  1 e 0 @512 ]
+"166
+[v _MTP_CLEN MTP_CLEN `VEb  1 e 0 @513 ]
+"169
+[v _PS0 PS0 `VEb  1 e 0 @520 ]
+"170
+[v _PS1 PS1 `VEb  1 e 0 @521 ]
+"171
+[v _PS2 PS2 `VEb  1 e 0 @522 ]
+"172
+[v _PSA PSA `VEb  1 e 0 @523 ]
+"173
+[v _T0SE T0SE `VEb  1 e 0 @524 ]
+"174
+[v _T0CS T0CS `VEb  1 e 0 @525 ]
+"175
+[v _INTEDG INTEDG `VEb  1 e 0 @526 ]
+"176
+[v _WDTEN WDTEN `VEb  1 e 0 @527 ]
+"179
+[v _PDA0 PDA0 `VEb  1 e 0 @528 ]
+"180
+[v _PDA1 PDA1 `VEb  1 e 0 @529 ]
+"181
+[v _PDA2 PDA2 `VEb  1 e 0 @530 ]
+"182
+[v _PDA3 PDA3 `VEb  1 e 0 @531 ]
+"183
+[v _PDA4 PDA4 `VEb  1 e 0 @532 ]
+"184
+[v _PDA5 PDA5 `VEb  1 e 0 @533 ]
+"185
+[v _PDA6 PDA6 `VEb  1 e 0 @534 ]
+"186
+[v _PDA7 PDA7 `VEb  1 e 0 @535 ]
+"189
+[v _PHA0 PHA0 `VEb  1 e 0 @536 ]
+"190
+[v _PHA1 PHA1 `VEb  1 e 0 @537 ]
+"191
+[v _PHA2 PHA2 `VEb  1 e 0 @538 ]
+"192
+[v _PHA3 PHA3 `VEb  1 e 0 @539 ]
+"193
+[v _PHA4 PHA4 `VEb  1 e 0 @540 ]
+"194
+[v _PHA5 PHA5 `VEb  1 e 0 @541 ]
+"195
+[v _PHA6 PHA6 `VEb  1 e 0 @542 ]
+"196
+[v _PHA7 PHA7 `VEb  1 e 0 @543 ]
+"199
+[v _TRISA0 TRISA0 `VEb  1 e 0 @552 ]
+"200
+[v _TRISA1 TRISA1 `VEb  1 e 0 @553 ]
+"201
+[v _TRISA2 TRISA2 `VEb  1 e 0 @554 ]
+"202
+[v _TRISA3 TRISA3 `VEb  1 e 0 @555 ]
+"203
+[v _TRISA4 TRISA4 `VEb  1 e 0 @556 ]
+"204
+[v _TRISA5 TRISA5 `VEb  1 e 0 @557 ]
+"205
+[v _TRISA6 TRISA6 `VEb  1 e 0 @558 ]
+"206
+[v _TRISA7 TRISA7 `VEb  1 e 0 @559 ]
+"209
+[v _TRISB0 TRISB0 `VEb  1 e 0 @560 ]
+"210
+[v _TRISB1 TRISB1 `VEb  1 e 0 @561 ]
+"211
+[v _TRISB2 TRISB2 `VEb  1 e 0 @562 ]
+"212
+[v _TRISB3 TRISB3 `VEb  1 e 0 @563 ]
+"213
+[v _TRISB4 TRISB4 `VEb  1 e 0 @564 ]
+"214
+[v _TRISB5 TRISB5 `VEb  1 e 0 @565 ]
+"215
+[v _TRISB6 TRISB6 `VEb  1 e 0 @566 ]
+"216
+[v _TRISB7 TRISB7 `VEb  1 e 0 @567 ]
+"219
+[v _T1IF T1IF `VEb  1 e 0 @600 ]
+"220
+[v _T1IE T1IE `VEb  1 e 0 @601 ]
+"221
+[v _BOREN BOREN `VEb  1 e 0 @602 ]
+"222
+[v _BOR BOR `VEb  1 e 0 @603 ]
+"223
+[v _POR POR `VEb  1 e 0 @604 ]
+"224
+[v _T2IF T2IF `VEb  1 e 0 @605 ]
+"225
+[v _T2IE T2IE `VEb  1 e 0 @606 ]
+"226
+[v _T0CK T0CK `VEb  1 e 0 @607 ]
+"229
+[v _T1PR0 T1PR0 `VEb  1 e 0 @608 ]
+"230
+[v _T1PR1 T1PR1 `VEb  1 e 0 @609 ]
+"231
+[v _T1PR2 T1PR2 `VEb  1 e 0 @610 ]
+"232
+[v _T1CK0 T1CK0 `VEb  1 e 0 @611 ]
+"233
+[v _T1CK1 T1CK1 `VEb  1 e 0 @612 ]
+"234
+[v _T0OSCEN T0OSCEN `VEb  1 e 0 @613 ]
+"235
+[v _PWM0E PWM0E `VEb  1 e 0 @614 ]
+"236
+[v _T1EN T1EN `VEb  1 e 0 @615 ]
+"240
+[v _T2PR0 T2PR0 `VEb  1 e 0 @640 ]
+"241
+[v _T2PR1 T2PR1 `VEb  1 e 0 @641 ]
+"242
+[v _T2PR2 T2PR2 `VEb  1 e 0 @642 ]
+"243
+[v _T2CK0 T2CK0 `VEb  1 e 0 @643 ]
+"244
+[v _T2CK1 T2CK1 `VEb  1 e 0 @644 ]
+"245
+[v _SCS SCS `VEb  1 e 0 @645 ]
+"246
+[v _PWM1E PWM1E `VEb  1 e 0 @646 ]
+"247
+[v _T2EN T2EN `VEb  1 e 0 @647 ]
+"250
+[v _PWM1_8 PWM1_8 `VEb  1 e 0 @648 ]
+"251
+[v _PWM1_9 PWM1_9 `VEb  1 e 0 @649 ]
+"252
+[v _T2LOAD_8 T2LOAD_8 `VEb  1 e 0 @650 ]
+"253
+[v _T2LOAD_9 T2LOAD_9 `VEb  1 e 0 @651 ]
+"254
+[v _TIMER2_8 TIMER2_8 `VEb  1 e 0 @652 ]
+"255
+[v _TIMER2_9 TIMER2_9 `VEb  1 e 0 @653 ]
+"256
+[v _PWMS0 PWMS0 `VEb  1 e 0 @654 ]
+"257
+[v _PWMS1 PWMS1 `VEb  1 e 0 @655 ]
+"260
+[v _PWMM PWMM `VEb  1 e 0 @680 ]
+"262
+[v _ANSEL0 ANSEL0 `VEb  1 e 0 @688 ]
+"263
+[v _ANSEL1 ANSEL1 `VEb  1 e 0 @689 ]
+"264
+[v _ANSEL2 ANSEL2 `VEb  1 e 0 @690 ]
+"265
+[v _ANSEL3 ANSEL3 `VEb  1 e 0 @691 ]
+"266
+[v _ANSEL4 ANSEL4 `VEb  1 e 0 @692 ]
+"267
+[v _ANSEL5 ANSEL5 `VEb  1 e 0 @693 ]
+"268
+[v _ANSEL6 ANSEL6 `VEb  1 e 0 @694 ]
+"269
+[v _ANSEL7 ANSEL7 `VEb  1 e 0 @695 ]
+"272
+[v _ANSEL8 ANSEL8 `VEb  1 e 0 @696 ]
+"273
+[v _ANSEL9 ANSEL9 `VEb  1 e 0 @697 ]
+"274
+[v _ANSEL10 ANSEL10 `VEb  1 e 0 @698 ]
+"275
+[v _ANSEL11 ANSEL11 `VEb  1 e 0 @699 ]
+"276
+[v _ANSEL14 ANSEL14 `VEb  1 e 0 @702 ]
+"277
+[v _ANSEL15 ANSEL15 `VEb  1 e 0 @703 ]
+"280
+[v _ADEN ADEN `VEb  1 e 0 @720 ]
+"281
+[v _ADON ADON `VEb  1 e 0 @721 ]
+"282
+[v _CHS0 CHS0 `VEb  1 e 0 @722 ]
+"283
+[v _CHS1 CHS1 `VEb  1 e 0 @723 ]
+"284
+[v _CHS2 CHS2 `VEb  1 e 0 @724 ]
+"285
+[v _CHS3 CHS3 `VEb  1 e 0 @725 ]
+"287
+[v _ADREF ADREF `VEb  1 e 0 @728 ]
+"288
+[v _VHS0 VHS0 `VEb  1 e 0 @729 ]
+"289
+[v _VHS1 VHS1 `VEb  1 e 0 @730 ]
+"290
+[v _VHS2 VHS2 `VEb  1 e 0 @731 ]
+"291
+[v _ADCS0 ADCS0 `VEb  1 e 0 @732 ]
+"292
+[v _ADCS1 ADCS1 `VEb  1 e 0 @733 ]
+"293
+[v _ADCS2 ADCS2 `VEb  1 e 0 @734 ]
+<<<<<<< HEAD
+"4 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+[v _pwm_enabled pwm_enabled `uc  1 s 1 pwm_enabled ]
+"5
+[v _current_heat_mode current_heat_mode `E518  1 e 1 0 ]
+"5 C:\Users\Administrator\Desktop\+++最终版本+++\key_1.c
+=======
+"4 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+[v _pwm_enabled pwm_enabled `uc  1 s 1 pwm_enabled ]
+"5
+[v _current_heat_mode current_heat_mode `E518  1 e 1 0 ]
+"5 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\key_1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _key key `uc  1 e 1 0 ]
+"6
+[v _final_key final_key `uc  1 e 1 0 ]
+"7
+[v _key_mode key_mode `uc  1 e 1 0 ]
+<<<<<<< HEAD
+"24 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+[v _sys_state sys_state `E3  1 e 1 0 ]
+"25
+[v _shutdown_timer shutdown_timer `ui  1 e 2 0 ]
+"6 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"24 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+[v _sys_state sys_state `E3  1 e 1 0 ]
+"25
+[v _shutdown_timer shutdown_timer `ui  1 e 2 0 ]
+"6 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _current_dir current_dir `E491  1 s 1 current_dir ]
+"7
+[v _current_mode current_mode `E495  1 s 1 current_mode ]
+"8
+[v _current_speed current_speed `E501  1 s 1 current_speed ]
+[s S1061 . 7 `ui 1 work_duration 2 0 `ui 1 stop_duration 2 2 `uc 1 auto_dir_switch 1 4 `ui 1 dir_switch_interval 2 5 ]
+"11
+[v _mode_params mode_params `S1061  1 s 7 mode_params ]
+[s S1069 . 5 `E507 1 state 1 0 `ui 1 timer 2 1 `ui 1 dir_switch_timer 2 3 ]
+"12
+[v _mode_runtime mode_runtime `S1069  1 s 5 mode_runtime ]
+"15
+[v _pwm_map pwm_map `DC[3]ui  1 s 6 pwm_map ]
+<<<<<<< HEAD
+"30 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+=======
+"30 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _main main `(v  1 e 1 0 ]
+{
+"102
+[v main@current current `E467  1 a 1 4 ]
+"122
+} 0
+<<<<<<< HEAD
+"73 C:\Users\Administrator\Desktop\+++最终版本+++\inital.c
+=======
+"73 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\inital.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+{
+"86
+} 0
+"13
+[v _inital inital `(v  1 e 1 0 ]
+{
+"38
+} 0
+"56
+[v _T0_sysinitial T0_sysinitial `(v  1 e 1 0 ]
+{
+"71
+} 0
+<<<<<<< HEAD
+"115 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"115 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _Motor_ToggleSpeed Motor_ToggleSpeed `(v  1 e 1 0 ]
+{
+"122
+} 0
+"6 E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 8 ]
+[v ___awmod@counter counter `uc  1 a 1 7 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+<<<<<<< HEAD
+"102 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"102 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _Motor_ToggleDirection Motor_ToggleDirection `(v  1 e 1 0 ]
+{
+"109
+} 0
+"93
+[v _Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+{
+"96
+} 0
+"84
+[v _Motor_Start Motor_Start `(v  1 e 1 0 ]
+{
+"87
+} 0
+"41
+[v _hardware_set_motor hardware_set_motor `(v  1 s 1 hardware_set_motor ]
+{
+[v hardware_set_motor@dir dir `E491  1 a 1 wreg ]
+[v hardware_set_motor@dir dir `E491  1 a 1 wreg ]
+[v hardware_set_motor@speed speed `E501  1 p 1 8 ]
+"43
+[v hardware_set_motor@dir dir `E491  1 a 1 9 ]
+"53
+} 0
+"62
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+{
+"78
+} 0
+"29
+[v _hardware_stop_motor hardware_stop_motor `(v  1 s 1 hardware_stop_motor ]
+{
+"33
+} 0
+<<<<<<< HEAD
+"38 C:\Users\Administrator\Desktop\+++最终版本+++\pwm.c
+=======
+"38 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\pwm.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _nPWM2 nPWM2 `(v  1 e 1 0 ]
+{
+[v nPWM2@m m `uc  1 a 1 wreg ]
+[v nPWM2@m m `uc  1 a 1 wreg ]
+"40
+[v nPWM2@m m `uc  1 a 1 7 ]
+"52
+} 0
+"15
+[v _nPWM1 nPWM1 `(v  1 e 1 0 ]
+{
+[v nPWM1@n n `uc  1 a 1 wreg ]
+[v nPWM1@n n `uc  1 a 1 wreg ]
+"17
+[v nPWM1@n n `uc  1 a 1 7 ]
+"29
+} 0
+<<<<<<< HEAD
+"153 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+=======
+"154 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _Motor_SetMode Motor_SetMode `(v  1 e 1 0 ]
+{
+[v Motor_SetMode@new_mode new_mode `E495  1 a 1 wreg ]
+[v Motor_SetMode@new_mode new_mode `E495  1 a 1 wreg ]
+<<<<<<< HEAD
+"156
+[v Motor_SetMode@new_mode new_mode `E495  1 a 1 7 ]
+"200
+} 0
+"143
+[v _Motor_GetMode Motor_GetMode `(E467  1 e 1 0 ]
+{
+"146
+} 0
+"122 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+=======
+"157
+[v Motor_SetMode@new_mode new_mode `E495  1 a 1 7 ]
+"201
+} 0
+"144
+[v _Motor_GetMode Motor_GetMode `(E467  1 e 1 0 ]
+{
+"147
+} 0
+"122 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _Heat_Toggle Heat_Toggle `(v  1 e 1 0 ]
+{
+"141
+} 0
+"102
+[v _Heat_Stop Heat_Stop `(v  1 e 1 0 ]
+{
+"107
+} 0
+"94
+[v _Heat_Start Heat_Start `(v  1 e 1 0 ]
+{
+"97
+} 0
+"82
+[v _Heat_Init Heat_Init `(v  1 e 1 0 ]
+{
+"89
+} 0
+"145
+[v _HEAT_EnergySave HEAT_EnergySave `(v  1 e 1 0 ]
+{
+"159
+} 0
+"12
+[v _hardware_set_heat hardware_set_heat `(v  1 e 1 0 ]
+{
+"13
+[v hardware_set_heat@current_heat_mode current_heat_mode `E518  1 a 1 wreg ]
+[v hardware_set_heat@current_heat_mode current_heat_mode `E518  1 a 1 wreg ]
+"12
+[v hardware_set_heat@current_heat_mode current_heat_mode `E518  1 a 1 8 ]
+"31
+} 0
+"73
+[v _hardware_stop_heat hardware_stop_heat `(v  1 e 1 0 ]
+{
+"77
+} 0
+"34
+[v _hardware_pwm_control hardware_pwm_control `(v  1 e 1 0 ]
+{
+[v hardware_pwm_control@enable enable `uc  1 a 1 wreg ]
+[v hardware_pwm_control@enable enable `uc  1 a 1 wreg ]
+"36
+[v hardware_pwm_control@enable enable `uc  1 a 1 7 ]
+"41
+} 0
+"113
+[v _Heat_SetMode Heat_SetMode `(v  1 e 1 0 ]
+{
+[v Heat_SetMode@newmode newmode `E518  1 a 1 wreg ]
+[v Heat_SetMode@newmode newmode `E518  1 a 1 wreg ]
+"116
+[v Heat_SetMode@newmode newmode `E518  1 a 1 7 ]
+"117
+} 0
+<<<<<<< HEAD
+"5 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+=======
+"5 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+[v DelayMs@t t `ui  1 p 2 8 ]
+"14
+} 0
+<<<<<<< HEAD
+"91 C:\Users\Administrator\Desktop\+++最终版本+++\key_1.c
+=======
+"91 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\key_1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+{
+[v DelayUs2x@t t `uc  1 a 1 wreg ]
+[v DelayUs2x@t t `uc  1 a 1 wreg ]
+[v DelayUs2x@t t `uc  1 a 1 7 ]
+"94
+} 0
+<<<<<<< HEAD
+"156 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+{
+"182
+} 0
+"171 C:\Users\Administrator\Desktop\+++最终版本+++\key_1.c
+=======
+"155 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+{
+"181
+} 0
+"171 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\key_1.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _key_tick key_tick `(v  1 e 1 0 ]
+{
+"173
+[v key_tick@stable_cnt stable_cnt `uc  1 s 1 stable_cnt ]
+"174
+[v key_tick@last_key last_key `uc  1 s 1 last_key ]
+"175
+[v key_tick@key_released key_released `uc  1 s 1 key_released ]
+"206
+} 0
+"96
+[v _key_scan key_scan `(v  1 e 1 0 ]
+{
+"166
+} 0
+"91
+[v i1_DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+{
+[v i1DelayUs2x@t t `uc  1 a 1 wreg ]
+[v i1DelayUs2x@t t `uc  1 a 1 wreg ]
+[v i1DelayUs2x@t t `uc  1 a 1 0 ]
+"94
+} 0
+"72
+[v _keymode3_configuration keymode3_configuration `(v  1 e 1 0 ]
+{
+"90
+} 0
+"53
+[v _keymode2_configuration keymode2_configuration `(v  1 e 1 0 ]
+{
+"71
+} 0
+"34
+[v _keymode1_configuration keymode1_configuration `(v  1 e 1 0 ]
+{
+"52
+} 0
+"8
+[v _keymode0_configuration keymode0_configuration `(v  1 e 1 0 ]
+{
+"33
+} 0
+<<<<<<< HEAD
+"44 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+=======
+"44 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v _hardware_set_half_power hardware_set_half_power `(v  1 e 1 0 ]
+{
+"46
+[v hardware_set_half_power@pwm_value pwm_value `uc  1 s 1 pwm_value ]
+"68
+} 0
+<<<<<<< HEAD
+"130 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+[v _System_TimerHandler System_TimerHandler `(v  1 e 1 0 ]
+{
+"131
+[v System_TimerHandler@i i `ui  1 s 2 i ]
+"152
+} 0
+"102 C:\Users\Administrator\Desktop\+++最终版本+++\heat.c
+=======
+"129 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+[v _System_TimerHandler System_TimerHandler `(v  1 e 1 0 ]
+{
+"130
+[v System_TimerHandler@i i `ui  1 s 2 i ]
+"151
+} 0
+"102 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\heat.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v i1_Heat_Stop Heat_Stop `(v  1 e 1 0 ]
+{
+"107
+} 0
+"73
+[v i1_hardware_stop_heat hardware_stop_heat `(v  1 e 1 0 ]
+{
+"77
+} 0
+"34
+[v i1_hardware_pwm_control hardware_pwm_control `(v  1 e 1 0 ]
+{
+[v i1hardware_pwm_control@enable enable `uc  1 a 1 wreg ]
+[v i1hardware_pwm_control@enable enable `uc  1 a 1 wreg ]
+"36
+[v i1hardware_pwm_control@enable enable `uc  1 a 1 0 ]
+"41
+} 0
+<<<<<<< HEAD
+"206 C:\Users\Administrator\Desktop\+++最终版本+++\motor1.c
+[v _Motor_Process Motor_Process `(v  1 e 1 0 ]
+{
+"275
+=======
+"207 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\motor1.c
+[v _Motor_Process Motor_Process `(v  1 e 1 0 ]
+{
+"276
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+} 0
+"102
+[v i1_Motor_ToggleDirection Motor_ToggleDirection `(v  1 e 1 0 ]
+{
+"109
+} 0
+"93
+[v i1_Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+{
+"96
+} 0
+"29
+[v i1_hardware_stop_motor hardware_stop_motor `(v  1 s 1 i1_hardware_stop_motor ]
+{
+"33
+} 0
+"84
+[v i1_Motor_Start Motor_Start `(v  1 e 1 0 ]
+{
+"87
+} 0
+"41
+[v i1_hardware_set_motor hardware_set_motor `(v  1 s 1 i1_hardware_set_motor ]
+{
+[v i1hardware_set_motor@dir dir `E491  1 a 1 wreg ]
+[v i1hardware_set_motor@dir dir `E491  1 a 1 wreg ]
+[v i1hardware_set_motor@speed speed `E501  1 p 1 1 ]
+"43
+[v i1hardware_set_motor@dir dir `E491  1 a 1 2 ]
+"53
+} 0
+<<<<<<< HEAD
+"38 C:\Users\Administrator\Desktop\+++最终版本+++\pwm.c
+=======
+"38 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\pwm.c
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[v i1_nPWM2 nPWM2 `(v  1 e 1 0 ]
+{
+[v i1nPWM2@m m `uc  1 a 1 wreg ]
+[v i1nPWM2@m m `uc  1 a 1 wreg ]
+"40
+[v i1nPWM2@m m `uc  1 a 1 0 ]
+"52
+} 0
+"15
+[v i1_nPWM1 nPWM1 `(v  1 e 1 0 ]
+{
+[v i1nPWM1@n n `uc  1 a 1 wreg ]
+[v i1nPWM1@n n `uc  1 a 1 wreg ]
+"17
+[v i1nPWM1@n n `uc  1 a 1 0 ]
+"29
+} 0
+<<<<<<< HEAD
+"124 C:\Users\Administrator\Desktop\+++最终版本+++\main.c
+[v _System_GetState System_GetState `(E3  1 e 1 0 ]
+{
+"127
+=======
+"124 C:\Users\Administrator\Desktop\XH-007\+++最终版本+++\main.c
+[v _System_GetState System_GetState `(E3  1 e 1 0 ]
+{
+"126
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+} 0

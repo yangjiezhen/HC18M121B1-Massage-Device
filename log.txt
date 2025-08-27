@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+ 2025-08-22 13:59:52,551 - INFO- version 1.0.26.0
+ 2025-08-22 13:59:52,552 - INFO- 输入的文件为： heat.c inital.c key_1.c main.c motor1.c power.c pwm.c
+ 2025-08-22 13:59:52,552 - INFO- BIT:14 size: 2048chip:18m121b1fsr1bank:1mtp:1series:2interrupt:0
+ 2025-08-22 13:59:52,552 - INFO- START C CONVERT ASM
+ 2025-08-22 13:59:52,554 - INFO- picc --chip=18m121b1  --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4  --RUNTIME=keep --RUNTIME=osccal -Ex.err -S heat.c inital.c key_1.c main.c motor1.c power.c pwm.c
+ 2025-08-22 14:00:01,633 - INFO- END C CONVERT ASM
+ 2025-08-22 14:00:01,633 - INFO- START REVISE ASM
+ 2025-08-22 14:00:01,730 - INFO- END REVISE ASM
+ 2025-08-22 14:00:01,730 - INFO- picc --chip=18m121b1 --OPT=asmfile --asmlist --output=bin --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4 --RUNTIME=keep --RUNTIME=osccal -M -E+x.err heat.as -Omode_program_V01.hex
+ 2025-08-22 14:00:04,994 - INFO- 链接完成
+ 2025-08-22 14:00:04,994 - INFO- heat.lst
+ 2025-08-22 14:00:04,994 - INFO- mode_program_V01.lst
+ 2025-08-22 14:00:04,994 - INFO- START CONVERT
+ 2025-08-22 14:00:04,994 - INFO- mode_program_V01.hex
+ 2025-08-22 14:00:04,994 - INFO- mcu size2048
+ 2025-08-22 14:00:05,001 - INFO- 转码成功
+ 2025-08-22 14:00:05,001 - INFO- None
+ 2025-08-22 14:00:05,001 - INFO- Success Convert
+=======
+ 2025-08-20 09:38:55,130 - INFO- version 1.0.26.0
+ 2025-08-20 09:38:55,130 - INFO- 输入的文件为： heat.c inital.c key_1.c main.c motor1.c power.c pwm.c
+ 2025-08-20 09:38:55,130 - INFO- BIT:14 size: 2048chip:18m121b1fsr1bank:1mtp:1series:2interrupt:0
+ 2025-08-20 09:38:55,131 - INFO- START C CONVERT ASM
+ 2025-08-20 09:38:55,132 - INFO- picc --chip=18m121b1  --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4  --RUNTIME=keep --RUNTIME=osccal -Ex.err -S heat.c inital.c key_1.c main.c motor1.c power.c pwm.c
+ 2025-08-20 09:39:02,866 - INFO- END C CONVERT ASM
+ 2025-08-20 09:39:02,866 - INFO- START REVISE ASM
+ 2025-08-20 09:39:02,890 - INFO- END REVISE ASM
+ 2025-08-20 09:39:02,890 - INFO- picc --chip=18m121b1 --OPT=asmfile --asmlist --output=bin --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4 --RUNTIME=keep --RUNTIME=osccal -M -E+x.err heat.as -Omode_program_V01.hex
+ 2025-08-20 09:39:05,785 - INFO- 链接完成
+ 2025-08-20 09:39:05,785 - INFO- heat.lst
+ 2025-08-20 09:39:05,785 - INFO- mode_program_V01.lst
+ 2025-08-20 09:39:05,785 - INFO- START CONVERT
+ 2025-08-20 09:39:05,785 - INFO- mode_program_V01.hex
+ 2025-08-20 09:39:05,785 - INFO- mcu size2048
+ 2025-08-20 09:39:05,794 - INFO- 转码成功
+ 2025-08-20 09:39:05,794 - INFO- None
+ 2025-08-20 09:39:05,794 - INFO- Success Convert
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337

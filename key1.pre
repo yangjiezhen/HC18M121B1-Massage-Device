@@ -1,0 +1,443 @@
+
+# 1 "key1.c"
+
+# 12 "E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\include\hc18m121b1.h"
+volatile unsigned char INDF @ 0x000;
+volatile unsigned char T0 @ 0x001;
+volatile unsigned char PCL @ 0x002;
+volatile unsigned char STATUS @ 0x003;
+volatile unsigned char FSR @ 0x004;
+
+
+
+volatile unsigned char PORTA @ 0x005;
+volatile unsigned char PORTB @ 0x006;
+volatile unsigned char IOCA @ 0x007;
+volatile unsigned char LVDCR @ 0x008;
+volatile unsigned char IOCB @ 0x009;
+
+volatile unsigned char PCLATH @ 0x00A;
+volatile unsigned char PDCON @ 0x00B;
+volatile unsigned char PHCON @ 0x00D;
+volatile unsigned char INTECON @ 0x00E;
+volatile unsigned char PIR @ 0x00F;
+
+volatile unsigned char PMCON @ 0x040;
+volatile unsigned char OPTION @ 0x041;
+volatile unsigned char PDCON1 @ 0x042;
+volatile unsigned char PHCON1 @ 0x043;
+volatile unsigned char TRISA @ 0x045;
+volatile unsigned char TRISB @ 0x046;
+
+volatile unsigned char PMADRL @ 0x047;
+volatile unsigned char PMADRH @ 0x048;
+volatile unsigned char PMDATL @ 0x049;
+volatile unsigned char PMDATH @ 0x04A;
+
+volatile unsigned char T1CR_AUXR @ 0x04B;
+volatile unsigned char T1CON @ 0x04C;
+volatile unsigned char T1 @ 0x04D;
+volatile unsigned char T1LOAD @ 0x04E;
+volatile unsigned char PWM0P @ 0x04F;
+
+volatile unsigned char T2CON @ 0x050;
+volatile unsigned char TMR2H @ 0x051;
+volatile unsigned char T2 @ 0x052;
+volatile unsigned char T2LOAD @ 0x053;
+volatile unsigned char PWM1P @ 0x054;
+volatile unsigned char PWMSET @ 0x055;
+volatile unsigned char ANSELL @ 0x056;
+volatile unsigned char ANSELH @ 0x057;
+volatile unsigned char ADRESL @ 0x058;
+
+volatile unsigned char ADRESH @ 0x059;
+volatile unsigned char ADCON0 @ 0x05A;
+volatile unsigned char ADCON1 @ 0x05B;
+
+volatile unsigned char OCCUPY0BE @ 0x0BE;
+volatile unsigned char OCCUPY0BF @ 0x0BF;
+
+
+
+volatile bit C @ ((unsigned)&STATUS*8)+0;
+volatile bit DC @ ((unsigned)&STATUS*8)+1;
+volatile bit Z @ ((unsigned)&STATUS*8)+2;
+volatile bit PD @ ((unsigned)&STATUS*8)+3;
+volatile bit TO @ ((unsigned)&STATUS*8)+4;
+volatile bit RP0 @ ((unsigned)&STATUS*8)+5;
+volatile bit RST @ ((unsigned)&STATUS*8)+7;
+
+
+volatile bit PORTA0 @ ((unsigned)&PORTA*8)+0;
+volatile bit PORTA1 @ ((unsigned)&PORTA*8)+1;
+volatile bit PORTA2 @ ((unsigned)&PORTA*8)+2;
+volatile bit PORTA3 @ ((unsigned)&PORTA*8)+3;
+volatile bit PORTA4 @ ((unsigned)&PORTA*8)+4;
+volatile bit PORTA5 @ ((unsigned)&PORTA*8)+5;
+volatile bit PORTA6 @ ((unsigned)&PORTA*8)+6;
+volatile bit PORTA7 @ ((unsigned)&PORTA*8)+7;
+
+volatile bit PORTB0 @ ((unsigned)&PORTB*8)+0;
+volatile bit PORTB1 @ ((unsigned)&PORTB*8)+1;
+volatile bit PORTB2 @ ((unsigned)&PORTB*8)+2;
+volatile bit PORTB3 @ ((unsigned)&PORTB*8)+3;
+volatile bit PORTB4 @ ((unsigned)&PORTB*8)+4;
+volatile bit PORTB5 @ ((unsigned)&PORTB*8)+5;
+volatile bit PORTB6 @ ((unsigned)&PORTB*8)+6;
+volatile bit PORTB7 @ ((unsigned)&PORTB*8)+7;
+
+
+volatile bit IOCA0 @ ((unsigned)&IOCA*8)+0;
+volatile bit IOCA1 @ ((unsigned)&IOCA*8)+1;
+volatile bit IOCA2 @ ((unsigned)&IOCA*8)+2;
+volatile bit IOCA3 @ ((unsigned)&IOCA*8)+3;
+volatile bit IOCA4 @ ((unsigned)&IOCA*8)+4;
+volatile bit IOCA5 @ ((unsigned)&IOCA*8)+5;
+volatile bit IOCA6 @ ((unsigned)&IOCA*8)+6;
+volatile bit IOCA7 @ ((unsigned)&IOCA*8)+7;
+
+
+volatile bit LVDEN @ ((unsigned)&LVDCR*8)+0;
+volatile bit LVDSEL0 @ ((unsigned)&LVDCR*8)+1;
+volatile bit LVDSEL1 @ ((unsigned)&LVDCR*8)+2;
+volatile bit LVDSEL2 @ ((unsigned)&LVDCR*8)+3;
+volatile bit LVDSEL3 @ ((unsigned)&LVDCR*8)+4;
+volatile bit LVDF @ ((unsigned)&LVDCR*8)+7;
+
+
+volatile bit IOCB0 @ ((unsigned)&IOCB*8)+0;
+volatile bit IOCB1 @ ((unsigned)&IOCB*8)+1;
+volatile bit IOCB2 @ ((unsigned)&IOCB*8)+2;
+volatile bit IOCB3 @ ((unsigned)&IOCB*8)+3;
+volatile bit IOCB4 @ ((unsigned)&IOCB*8)+4;
+volatile bit IOCB5 @ ((unsigned)&IOCB*8)+5;
+volatile bit IOCB6 @ ((unsigned)&IOCB*8)+6;
+volatile bit IOCB7 @ ((unsigned)&IOCB*8)+7;
+
+
+volatile bit PDB0 @ ((unsigned)&PDCON*8)+0;
+volatile bit PDB1 @ ((unsigned)&PDCON*8)+1;
+volatile bit PDB2 @ ((unsigned)&PDCON*8)+2;
+volatile bit PDB3 @ ((unsigned)&PDCON*8)+3;
+volatile bit PDB4 @ ((unsigned)&PDCON*8)+4;
+volatile bit PDB5 @ ((unsigned)&PDCON*8)+5;
+volatile bit PDB6 @ ((unsigned)&PDCON*8)+6;
+volatile bit PDB7 @ ((unsigned)&PDCON*8)+7;
+
+
+volatile bit PHB0 @ ((unsigned)&PHCON*8)+0;
+volatile bit PHB1 @ ((unsigned)&PHCON*8)+1;
+volatile bit PHB2 @ ((unsigned)&PHCON*8)+2;
+volatile bit PHB3 @ ((unsigned)&PHCON*8)+3;
+volatile bit PHB4 @ ((unsigned)&PHCON*8)+4;
+volatile bit PHB5 @ ((unsigned)&PHCON*8)+5;
+volatile bit PHB6 @ ((unsigned)&PHCON*8)+6;
+volatile bit PHB7 @ ((unsigned)&PHCON*8)+7;
+
+
+volatile bit T0IE @ ((unsigned)&INTECON*8)+0;
+volatile bit PBIE @ ((unsigned)&INTECON*8)+1;
+volatile bit INT0E @ ((unsigned)&INTECON*8)+2;
+volatile bit T0IF @ ((unsigned)&INTECON*8)+3;
+volatile bit PBIF @ ((unsigned)&INTECON*8)+4;
+volatile bit INT0F @ ((unsigned)&INTECON*8)+5;
+volatile bit GIE @ ((unsigned)&INTECON*8)+7;
+
+
+volatile bit PAIF @ ((unsigned)&PIR*8)+0;
+volatile bit PAIE @ ((unsigned)&PIR*8)+1;
+volatile bit ADIF @ ((unsigned)&PIR*8)+2;
+volatile bit ADIE @ ((unsigned)&PIR*8)+3;
+volatile bit INT1F @ ((unsigned)&PIR*8)+4;
+volatile bit INT1E @ ((unsigned)&PIR*8)+5;
+volatile bit INT1EDG @ ((unsigned)&PIR*8)+6;
+
+
+
+
+volatile bit RD_FLAG @ ((unsigned)&PMCON*8)+0;
+volatile bit MTP_CLEN @ ((unsigned)&PMCON*8)+1;
+
+
+volatile bit PS0 @ ((unsigned)&OPTION*8)+0;
+volatile bit PS1 @ ((unsigned)&OPTION*8)+1;
+volatile bit PS2 @ ((unsigned)&OPTION*8)+2;
+volatile bit PSA @ ((unsigned)&OPTION*8)+3;
+volatile bit T0SE @ ((unsigned)&OPTION*8)+4;
+volatile bit T0CS @ ((unsigned)&OPTION*8)+5;
+volatile bit INTEDG @ ((unsigned)&OPTION*8)+6;
+volatile bit WDTEN @ ((unsigned)&OPTION*8)+7;
+
+
+volatile bit PDA0 @ ((unsigned)&PDCON1*8)+0;
+volatile bit PDA1 @ ((unsigned)&PDCON1*8)+1;
+volatile bit PDA2 @ ((unsigned)&PDCON1*8)+2;
+volatile bit PDA3 @ ((unsigned)&PDCON1*8)+3;
+volatile bit PDA4 @ ((unsigned)&PDCON1*8)+4;
+volatile bit PDA5 @ ((unsigned)&PDCON1*8)+5;
+volatile bit PDA6 @ ((unsigned)&PDCON1*8)+6;
+volatile bit PDA7 @ ((unsigned)&PDCON1*8)+7;
+
+
+volatile bit PHA0 @ ((unsigned)&PHCON1*8)+0;
+volatile bit PHA1 @ ((unsigned)&PHCON1*8)+1;
+volatile bit PHA2 @ ((unsigned)&PHCON1*8)+2;
+volatile bit PHA3 @ ((unsigned)&PHCON1*8)+3;
+volatile bit PHA4 @ ((unsigned)&PHCON1*8)+4;
+volatile bit PHA5 @ ((unsigned)&PHCON1*8)+5;
+volatile bit PHA6 @ ((unsigned)&PHCON1*8)+6;
+volatile bit PHA7 @ ((unsigned)&PHCON1*8)+7;
+
+
+volatile bit TRISA0 @ ((unsigned)&TRISA*8)+0;
+volatile bit TRISA1 @ ((unsigned)&TRISA*8)+1;
+volatile bit TRISA2 @ ((unsigned)&TRISA*8)+2;
+volatile bit TRISA3 @ ((unsigned)&TRISA*8)+3;
+volatile bit TRISA4 @ ((unsigned)&TRISA*8)+4;
+volatile bit TRISA5 @ ((unsigned)&TRISA*8)+5;
+volatile bit TRISA6 @ ((unsigned)&TRISA*8)+6;
+volatile bit TRISA7 @ ((unsigned)&TRISA*8)+7;
+
+
+volatile bit TRISB0 @ ((unsigned)&TRISB*8)+0;
+volatile bit TRISB1 @ ((unsigned)&TRISB*8)+1;
+volatile bit TRISB2 @ ((unsigned)&TRISB*8)+2;
+volatile bit TRISB3 @ ((unsigned)&TRISB*8)+3;
+volatile bit TRISB4 @ ((unsigned)&TRISB*8)+4;
+volatile bit TRISB5 @ ((unsigned)&TRISB*8)+5;
+volatile bit TRISB6 @ ((unsigned)&TRISB*8)+6;
+volatile bit TRISB7 @ ((unsigned)&TRISB*8)+7;
+
+
+volatile bit T1IF @ ((unsigned)&T1CR_AUXR*8)+0;
+volatile bit T1IE @ ((unsigned)&T1CR_AUXR*8)+1;
+volatile bit BOREN @ ((unsigned)&T1CR_AUXR*8)+2;
+volatile bit BOR @ ((unsigned)&T1CR_AUXR*8)+3;
+volatile bit POR @ ((unsigned)&T1CR_AUXR*8)+4;
+volatile bit T2IF @ ((unsigned)&T1CR_AUXR*8)+5;
+volatile bit T2IE @ ((unsigned)&T1CR_AUXR*8)+6;
+volatile bit T0CK @ ((unsigned)&T1CR_AUXR*8)+7;
+
+
+volatile bit T1PR0 @ ((unsigned)&T1CON*8)+0;
+volatile bit T1PR1 @ ((unsigned)&T1CON*8)+1;
+volatile bit T1PR2 @ ((unsigned)&T1CON*8)+2;
+volatile bit T1CK0 @ ((unsigned)&T1CON*8)+3;
+volatile bit T1CK1 @ ((unsigned)&T1CON*8)+4;
+volatile bit T0OSCEN @ ((unsigned)&T1CON*8)+5;
+volatile bit PWM0E @ ((unsigned)&T1CON*8)+6;
+volatile bit T1EN @ ((unsigned)&T1CON*8)+7;
+
+
+
+volatile bit T2PR0 @ ((unsigned)&T2CON*8)+0;
+volatile bit T2PR1 @ ((unsigned)&T2CON*8)+1;
+volatile bit T2PR2 @ ((unsigned)&T2CON*8)+2;
+volatile bit T2CK0 @ ((unsigned)&T2CON*8)+3;
+volatile bit T2CK1 @ ((unsigned)&T2CON*8)+4;
+volatile bit SCS @ ((unsigned)&T2CON*8)+5;
+volatile bit PWM1E @ ((unsigned)&T2CON*8)+6;
+volatile bit T2EN @ ((unsigned)&T2CON*8)+7;
+
+
+volatile bit PWM1_8 @ ((unsigned)&TMR2H*8)+0;
+volatile bit PWM1_9 @ ((unsigned)&TMR2H*8)+1;
+volatile bit T2LOAD_8 @ ((unsigned)&TMR2H*8)+2;
+volatile bit T2LOAD_9 @ ((unsigned)&TMR2H*8)+3;
+volatile bit TIMER2_8 @ ((unsigned)&TMR2H*8)+4;
+volatile bit TIMER2_9 @ ((unsigned)&TMR2H*8)+5;
+volatile bit PWMS0 @ ((unsigned)&TMR2H*8)+6;
+volatile bit PWMS1 @ ((unsigned)&TMR2H*8)+7;
+
+
+volatile bit PWMM @ ((unsigned)&PWMSET*8)+0;
+
+volatile bit ANSEL0 @ ((unsigned)&ANSELL*8)+0;
+volatile bit ANSEL1 @ ((unsigned)&ANSELL*8)+1;
+volatile bit ANSEL2 @ ((unsigned)&ANSELL*8)+2;
+volatile bit ANSEL3 @ ((unsigned)&ANSELL*8)+3;
+volatile bit ANSEL4 @ ((unsigned)&ANSELL*8)+4;
+volatile bit ANSEL5 @ ((unsigned)&ANSELL*8)+5;
+volatile bit ANSEL6 @ ((unsigned)&ANSELL*8)+6;
+volatile bit ANSEL7 @ ((unsigned)&ANSELL*8)+7;
+
+
+volatile bit ANSEL8 @ ((unsigned)&ANSELH*8)+0;
+volatile bit ANSEL9 @ ((unsigned)&ANSELH*8)+1;
+volatile bit ANSEL10 @ ((unsigned)&ANSELH*8)+2;
+volatile bit ANSEL11 @ ((unsigned)&ANSELH*8)+3;
+volatile bit ANSEL14 @ ((unsigned)&ANSELH*8)+6;
+volatile bit ANSEL15 @ ((unsigned)&ANSELH*8)+7;
+
+
+volatile bit ADEN @ ((unsigned)&ADCON0*8)+0;
+volatile bit ADON @ ((unsigned)&ADCON0*8)+1;
+volatile bit CHS0 @ ((unsigned)&ADCON0*8)+2;
+volatile bit CHS1 @ ((unsigned)&ADCON0*8)+3;
+volatile bit CHS2 @ ((unsigned)&ADCON0*8)+4;
+volatile bit CHS3 @ ((unsigned)&ADCON0*8)+5;
+
+volatile bit ADREF @ ((unsigned)&ADCON1*8)+0;
+volatile bit VHS0 @ ((unsigned)&ADCON1*8)+1;
+volatile bit VHS1 @ ((unsigned)&ADCON1*8)+2;
+volatile bit VHS2 @ ((unsigned)&ADCON1*8)+3;
+volatile bit ADCS0 @ ((unsigned)&ADCON1*8)+4;
+volatile bit ADCS1 @ ((unsigned)&ADCON1*8)+5;
+volatile bit ADCS2 @ ((unsigned)&ADCON1*8)+6;
+
+# 14 "holychip_define.h"
+typedef unsigned char BOOL;
+
+# 12 "key1.c"
+uint8_t Key1_Flag[KEY1_COUNT];
+unsigned char Key1Scan_Count,k;
+uint8_t Key1_GetState(uint8_t n)
+{
+if(n==KEY1_3)
+{
+if(PORTA7==1)
+{
+return 0;
+}
+return 1;
+}
+else if(n==KEY1_2)
+{
+if(PORTA6==1)
+{
+return 0;
+}
+return 1;
+}
+else if(n==KEY1_1)
+{
+if(PORTA4==1)
+{
+return 0;
+}
+return 1;
+}
+
+}
+
+
+void key1_tick()
+{
+static unsigned int count1,i;
+static unsigned char CurrState[KEY1_COUNT];
+static unsigned char PrevState[KEY1_COUNT],S[KEY1_COUNT],Time[KEY1_COUNT];
+
+
+for(i=0;i<KEY1_COUNT;i++)
+{
+
+if(Time[i]>0)
+{
+Time[i]--;
+}
+}
+count1++;
+if (count1 >= 20)
+{
+count1 = 0;
+
+for (i = 0; i < KEY1_COUNT; i ++)
+{
+PrevState[i] = CurrState[i];
+CurrState[i] = Key1_GetState(i);
+
+if (CurrState[i] == KEY_PRESSED)
+{
+Key_Flag[i] |= KEY_HOLD;
+}
+else
+{
+Key_Flag[i] &= ~KEY_HOLD;
+}
+
+if (CurrState[i] == KEY_PRESSED && PrevState[i] == KEY_UNPRESSED)
+{
+Key_Flag[i] |= KEY_DOWN;
+}
+
+if (CurrState[i] == KEY_UNPRESSED && PrevState[i] == KEY_PRESSED)
+{
+Key_Flag[i] |= KEY_UP;
+}
+
+if (S[i] == 0)
+{
+if (CurrState[i] == KEY_PRESSED)
+{
+Time[i] = KEY_TIME_LONG;
+S[i] = 1;
+}
+}
+else if (S[i] == 1)
+{
+if (CurrState[i] == KEY_UNPRESSED)
+{
+Time[i] = KEY_TIME_DOUBLE;
+S[i] = 2;
+}
+else if (Time[i] == 0)
+{
+Time[i] = KEY_TIME_REPEAT;
+Key_Flag[i] |= KEY_LONG;
+S[i] = 4;
+}
+}
+else if (S[i] == 2)
+{
+if (CurrState[i] == KEY_PRESSED)
+{
+Key_Flag[i] |= KEY_DOUBLE;
+S[i] = 3;
+}
+else if (Time[i] == 0)
+{
+Key_Flag[i] |= KEY_SINGLE;
+S[i] = 0;
+}
+}
+else if (S[i] == 3)
+{
+if (CurrState[i] == KEY_UNPRESSED)
+{
+S[i] = 0;
+}
+}
+else if (S[i] == 4)
+{
+if (CurrState[i] == KEY_UNPRESSED)
+{
+S[i] = 0;
+}
+else if (Time[i] == 0)
+{
+Time[i] = KEY_TIME_REPEAT;
+Key_Flag[i] |= KEY_REPEAT;
+S[i] = 4;
+}
+}
+}
+}
+}
+
+uint8_t Key1_Check(uint8_t n ,uint8_t Flag)
+{
+if(Key1_Flag[n] & Flag)
+{
+if(Flag!=KEY1_HOLD)
+{
+Key_Flag[n] &= ~Flag;
+}
+return 1;
+}
+return 0;
+}
+
+
+
+}
+

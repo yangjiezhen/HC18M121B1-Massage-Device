@@ -1,0 +1,21 @@
+heat.c: 34: non-reentrant function "_hardware_pwm_control" appears in multiple call graphs and has been duplicated by the compiler
+heat.c: 73: non-reentrant function "_hardware_stop_heat" appears in multiple call graphs and has been duplicated by the compiler
+heat.c: 102: non-reentrant function "_Heat_Stop" appears in multiple call graphs and has been duplicated by the compiler
+key_1.c: 91: non-reentrant function "_DelayUs2x" appears in multiple call graphs and has been duplicated by the compiler
+motor1.c: 29: non-reentrant function "_hardware_stop_motor" appears in multiple call graphs and has been duplicated by the compiler
+motor1.c: 41: non-reentrant function "_hardware_set_motor" appears in multiple call graphs and has been duplicated by the compiler
+motor1.c: 84: non-reentrant function "_Motor_Start" appears in multiple call graphs and has been duplicated by the compiler
+motor1.c: 93: non-reentrant function "_Motor_Stop" appears in multiple call graphs and has been duplicated by the compiler
+motor1.c: 102: non-reentrant function "_Motor_ToggleDirection" appears in multiple call graphs and has been duplicated by the compiler
+pwm.c: 15: non-reentrant function "_nPWM1" appears in multiple call graphs and has been duplicated by the compiler
+pwm.c: 38: non-reentrant function "_nPWM2" appears in multiple call graphs and has been duplicated by the compiler
+main.c: 33: (1393) possible hardware stack overflow detected; estimated stack depth: 10 (warning)
+
+Memory Summary:
+    Program space        used   396h (   918) of   7FCh words   ( 44.9%)
+    Data space           used    4Bh (    75) of    7Eh bytes   ( 59.5%)
+    EEPROM space         None available
+    Data stack space     used     0h (     0) of    2Eh bytes   (  0.0%)
+    Configuration bits   used     0h (     0) of     1h word    (  0.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+

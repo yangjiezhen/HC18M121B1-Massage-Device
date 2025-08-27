@@ -1,0 +1,803 @@
+
+# 1 "motor1.c"
+
+# 4 "motor1.h"
+typedef unsigned int uint16_t;
+typedef unsigned char uint8_t;
+
+# 5 "ALL.h"
+typedef unsigned int uint16_t;
+typedef unsigned char uint8_t;
+
+typedef enum {
+SYSTEM_OFF,
+SYSTEM_ON
+} SystemState;
+
+extern SystemState sys_state;
+SystemState System_GetState(void);
+
+# 12 "E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\include\hc18m121b1.h"
+volatile unsigned char INDF @ 0x000;
+volatile unsigned char T0 @ 0x001;
+volatile unsigned char PCL @ 0x002;
+volatile unsigned char STATUS @ 0x003;
+volatile unsigned char FSR @ 0x004;
+
+
+
+volatile unsigned char PORTA @ 0x005;
+volatile unsigned char PORTB @ 0x006;
+volatile unsigned char IOCA @ 0x007;
+volatile unsigned char LVDCR @ 0x008;
+volatile unsigned char IOCB @ 0x009;
+
+volatile unsigned char PCLATH @ 0x00A;
+volatile unsigned char PDCON @ 0x00B;
+volatile unsigned char PHCON @ 0x00D;
+volatile unsigned char INTECON @ 0x00E;
+volatile unsigned char PIR @ 0x00F;
+
+volatile unsigned char PMCON @ 0x040;
+volatile unsigned char OPTION @ 0x041;
+volatile unsigned char PDCON1 @ 0x042;
+volatile unsigned char PHCON1 @ 0x043;
+volatile unsigned char TRISA @ 0x045;
+volatile unsigned char TRISB @ 0x046;
+
+volatile unsigned char PMADRL @ 0x047;
+volatile unsigned char PMADRH @ 0x048;
+volatile unsigned char PMDATL @ 0x049;
+volatile unsigned char PMDATH @ 0x04A;
+
+volatile unsigned char T1CR_AUXR @ 0x04B;
+volatile unsigned char T1CON @ 0x04C;
+volatile unsigned char T1 @ 0x04D;
+volatile unsigned char T1LOAD @ 0x04E;
+volatile unsigned char PWM0P @ 0x04F;
+
+volatile unsigned char T2CON @ 0x050;
+volatile unsigned char TMR2H @ 0x051;
+volatile unsigned char T2 @ 0x052;
+volatile unsigned char T2LOAD @ 0x053;
+volatile unsigned char PWM1P @ 0x054;
+volatile unsigned char PWMSET @ 0x055;
+volatile unsigned char ANSELL @ 0x056;
+volatile unsigned char ANSELH @ 0x057;
+volatile unsigned char ADRESL @ 0x058;
+
+volatile unsigned char ADRESH @ 0x059;
+volatile unsigned char ADCON0 @ 0x05A;
+volatile unsigned char ADCON1 @ 0x05B;
+
+volatile unsigned char OCCUPY0BE @ 0x0BE;
+volatile unsigned char OCCUPY0BF @ 0x0BF;
+
+
+
+volatile bit C @ ((unsigned)&STATUS*8)+0;
+volatile bit DC @ ((unsigned)&STATUS*8)+1;
+volatile bit Z @ ((unsigned)&STATUS*8)+2;
+volatile bit PD @ ((unsigned)&STATUS*8)+3;
+volatile bit TO @ ((unsigned)&STATUS*8)+4;
+volatile bit RP0 @ ((unsigned)&STATUS*8)+5;
+volatile bit RST @ ((unsigned)&STATUS*8)+7;
+
+
+volatile bit PORTA0 @ ((unsigned)&PORTA*8)+0;
+volatile bit PORTA1 @ ((unsigned)&PORTA*8)+1;
+volatile bit PORTA2 @ ((unsigned)&PORTA*8)+2;
+volatile bit PORTA3 @ ((unsigned)&PORTA*8)+3;
+volatile bit PORTA4 @ ((unsigned)&PORTA*8)+4;
+volatile bit PORTA5 @ ((unsigned)&PORTA*8)+5;
+volatile bit PORTA6 @ ((unsigned)&PORTA*8)+6;
+volatile bit PORTA7 @ ((unsigned)&PORTA*8)+7;
+
+volatile bit PORTB0 @ ((unsigned)&PORTB*8)+0;
+volatile bit PORTB1 @ ((unsigned)&PORTB*8)+1;
+volatile bit PORTB2 @ ((unsigned)&PORTB*8)+2;
+volatile bit PORTB3 @ ((unsigned)&PORTB*8)+3;
+volatile bit PORTB4 @ ((unsigned)&PORTB*8)+4;
+volatile bit PORTB5 @ ((unsigned)&PORTB*8)+5;
+volatile bit PORTB6 @ ((unsigned)&PORTB*8)+6;
+volatile bit PORTB7 @ ((unsigned)&PORTB*8)+7;
+
+
+volatile bit IOCA0 @ ((unsigned)&IOCA*8)+0;
+volatile bit IOCA1 @ ((unsigned)&IOCA*8)+1;
+volatile bit IOCA2 @ ((unsigned)&IOCA*8)+2;
+volatile bit IOCA3 @ ((unsigned)&IOCA*8)+3;
+volatile bit IOCA4 @ ((unsigned)&IOCA*8)+4;
+volatile bit IOCA5 @ ((unsigned)&IOCA*8)+5;
+volatile bit IOCA6 @ ((unsigned)&IOCA*8)+6;
+volatile bit IOCA7 @ ((unsigned)&IOCA*8)+7;
+
+
+volatile bit LVDEN @ ((unsigned)&LVDCR*8)+0;
+volatile bit LVDSEL0 @ ((unsigned)&LVDCR*8)+1;
+volatile bit LVDSEL1 @ ((unsigned)&LVDCR*8)+2;
+volatile bit LVDSEL2 @ ((unsigned)&LVDCR*8)+3;
+volatile bit LVDSEL3 @ ((unsigned)&LVDCR*8)+4;
+volatile bit LVDF @ ((unsigned)&LVDCR*8)+7;
+
+
+volatile bit IOCB0 @ ((unsigned)&IOCB*8)+0;
+volatile bit IOCB1 @ ((unsigned)&IOCB*8)+1;
+volatile bit IOCB2 @ ((unsigned)&IOCB*8)+2;
+volatile bit IOCB3 @ ((unsigned)&IOCB*8)+3;
+volatile bit IOCB4 @ ((unsigned)&IOCB*8)+4;
+volatile bit IOCB5 @ ((unsigned)&IOCB*8)+5;
+volatile bit IOCB6 @ ((unsigned)&IOCB*8)+6;
+volatile bit IOCB7 @ ((unsigned)&IOCB*8)+7;
+
+
+volatile bit PDB0 @ ((unsigned)&PDCON*8)+0;
+volatile bit PDB1 @ ((unsigned)&PDCON*8)+1;
+volatile bit PDB2 @ ((unsigned)&PDCON*8)+2;
+volatile bit PDB3 @ ((unsigned)&PDCON*8)+3;
+volatile bit PDB4 @ ((unsigned)&PDCON*8)+4;
+volatile bit PDB5 @ ((unsigned)&PDCON*8)+5;
+volatile bit PDB6 @ ((unsigned)&PDCON*8)+6;
+volatile bit PDB7 @ ((unsigned)&PDCON*8)+7;
+
+
+volatile bit PHB0 @ ((unsigned)&PHCON*8)+0;
+volatile bit PHB1 @ ((unsigned)&PHCON*8)+1;
+volatile bit PHB2 @ ((unsigned)&PHCON*8)+2;
+volatile bit PHB3 @ ((unsigned)&PHCON*8)+3;
+volatile bit PHB4 @ ((unsigned)&PHCON*8)+4;
+volatile bit PHB5 @ ((unsigned)&PHCON*8)+5;
+volatile bit PHB6 @ ((unsigned)&PHCON*8)+6;
+volatile bit PHB7 @ ((unsigned)&PHCON*8)+7;
+
+
+volatile bit T0IE @ ((unsigned)&INTECON*8)+0;
+volatile bit PBIE @ ((unsigned)&INTECON*8)+1;
+volatile bit INT0E @ ((unsigned)&INTECON*8)+2;
+volatile bit T0IF @ ((unsigned)&INTECON*8)+3;
+volatile bit PBIF @ ((unsigned)&INTECON*8)+4;
+volatile bit INT0F @ ((unsigned)&INTECON*8)+5;
+volatile bit GIE @ ((unsigned)&INTECON*8)+7;
+
+
+volatile bit PAIF @ ((unsigned)&PIR*8)+0;
+volatile bit PAIE @ ((unsigned)&PIR*8)+1;
+volatile bit ADIF @ ((unsigned)&PIR*8)+2;
+volatile bit ADIE @ ((unsigned)&PIR*8)+3;
+volatile bit INT1F @ ((unsigned)&PIR*8)+4;
+volatile bit INT1E @ ((unsigned)&PIR*8)+5;
+volatile bit INT1EDG @ ((unsigned)&PIR*8)+6;
+
+
+
+
+volatile bit RD_FLAG @ ((unsigned)&PMCON*8)+0;
+volatile bit MTP_CLEN @ ((unsigned)&PMCON*8)+1;
+
+
+volatile bit PS0 @ ((unsigned)&OPTION*8)+0;
+volatile bit PS1 @ ((unsigned)&OPTION*8)+1;
+volatile bit PS2 @ ((unsigned)&OPTION*8)+2;
+volatile bit PSA @ ((unsigned)&OPTION*8)+3;
+volatile bit T0SE @ ((unsigned)&OPTION*8)+4;
+volatile bit T0CS @ ((unsigned)&OPTION*8)+5;
+volatile bit INTEDG @ ((unsigned)&OPTION*8)+6;
+volatile bit WDTEN @ ((unsigned)&OPTION*8)+7;
+
+
+volatile bit PDA0 @ ((unsigned)&PDCON1*8)+0;
+volatile bit PDA1 @ ((unsigned)&PDCON1*8)+1;
+volatile bit PDA2 @ ((unsigned)&PDCON1*8)+2;
+volatile bit PDA3 @ ((unsigned)&PDCON1*8)+3;
+volatile bit PDA4 @ ((unsigned)&PDCON1*8)+4;
+volatile bit PDA5 @ ((unsigned)&PDCON1*8)+5;
+volatile bit PDA6 @ ((unsigned)&PDCON1*8)+6;
+volatile bit PDA7 @ ((unsigned)&PDCON1*8)+7;
+
+
+volatile bit PHA0 @ ((unsigned)&PHCON1*8)+0;
+volatile bit PHA1 @ ((unsigned)&PHCON1*8)+1;
+volatile bit PHA2 @ ((unsigned)&PHCON1*8)+2;
+volatile bit PHA3 @ ((unsigned)&PHCON1*8)+3;
+volatile bit PHA4 @ ((unsigned)&PHCON1*8)+4;
+volatile bit PHA5 @ ((unsigned)&PHCON1*8)+5;
+volatile bit PHA6 @ ((unsigned)&PHCON1*8)+6;
+volatile bit PHA7 @ ((unsigned)&PHCON1*8)+7;
+
+
+volatile bit TRISA0 @ ((unsigned)&TRISA*8)+0;
+volatile bit TRISA1 @ ((unsigned)&TRISA*8)+1;
+volatile bit TRISA2 @ ((unsigned)&TRISA*8)+2;
+volatile bit TRISA3 @ ((unsigned)&TRISA*8)+3;
+volatile bit TRISA4 @ ((unsigned)&TRISA*8)+4;
+volatile bit TRISA5 @ ((unsigned)&TRISA*8)+5;
+volatile bit TRISA6 @ ((unsigned)&TRISA*8)+6;
+volatile bit TRISA7 @ ((unsigned)&TRISA*8)+7;
+
+
+volatile bit TRISB0 @ ((unsigned)&TRISB*8)+0;
+volatile bit TRISB1 @ ((unsigned)&TRISB*8)+1;
+volatile bit TRISB2 @ ((unsigned)&TRISB*8)+2;
+volatile bit TRISB3 @ ((unsigned)&TRISB*8)+3;
+volatile bit TRISB4 @ ((unsigned)&TRISB*8)+4;
+volatile bit TRISB5 @ ((unsigned)&TRISB*8)+5;
+volatile bit TRISB6 @ ((unsigned)&TRISB*8)+6;
+volatile bit TRISB7 @ ((unsigned)&TRISB*8)+7;
+
+
+volatile bit T1IF @ ((unsigned)&T1CR_AUXR*8)+0;
+volatile bit T1IE @ ((unsigned)&T1CR_AUXR*8)+1;
+volatile bit BOREN @ ((unsigned)&T1CR_AUXR*8)+2;
+volatile bit BOR @ ((unsigned)&T1CR_AUXR*8)+3;
+volatile bit POR @ ((unsigned)&T1CR_AUXR*8)+4;
+volatile bit T2IF @ ((unsigned)&T1CR_AUXR*8)+5;
+volatile bit T2IE @ ((unsigned)&T1CR_AUXR*8)+6;
+volatile bit T0CK @ ((unsigned)&T1CR_AUXR*8)+7;
+
+
+volatile bit T1PR0 @ ((unsigned)&T1CON*8)+0;
+volatile bit T1PR1 @ ((unsigned)&T1CON*8)+1;
+volatile bit T1PR2 @ ((unsigned)&T1CON*8)+2;
+volatile bit T1CK0 @ ((unsigned)&T1CON*8)+3;
+volatile bit T1CK1 @ ((unsigned)&T1CON*8)+4;
+volatile bit T0OSCEN @ ((unsigned)&T1CON*8)+5;
+volatile bit PWM0E @ ((unsigned)&T1CON*8)+6;
+volatile bit T1EN @ ((unsigned)&T1CON*8)+7;
+
+
+
+volatile bit T2PR0 @ ((unsigned)&T2CON*8)+0;
+volatile bit T2PR1 @ ((unsigned)&T2CON*8)+1;
+volatile bit T2PR2 @ ((unsigned)&T2CON*8)+2;
+volatile bit T2CK0 @ ((unsigned)&T2CON*8)+3;
+volatile bit T2CK1 @ ((unsigned)&T2CON*8)+4;
+volatile bit SCS @ ((unsigned)&T2CON*8)+5;
+volatile bit PWM1E @ ((unsigned)&T2CON*8)+6;
+volatile bit T2EN @ ((unsigned)&T2CON*8)+7;
+
+
+volatile bit PWM1_8 @ ((unsigned)&TMR2H*8)+0;
+volatile bit PWM1_9 @ ((unsigned)&TMR2H*8)+1;
+volatile bit T2LOAD_8 @ ((unsigned)&TMR2H*8)+2;
+volatile bit T2LOAD_9 @ ((unsigned)&TMR2H*8)+3;
+volatile bit TIMER2_8 @ ((unsigned)&TMR2H*8)+4;
+volatile bit TIMER2_9 @ ((unsigned)&TMR2H*8)+5;
+volatile bit PWMS0 @ ((unsigned)&TMR2H*8)+6;
+volatile bit PWMS1 @ ((unsigned)&TMR2H*8)+7;
+
+
+volatile bit PWMM @ ((unsigned)&PWMSET*8)+0;
+
+volatile bit ANSEL0 @ ((unsigned)&ANSELL*8)+0;
+volatile bit ANSEL1 @ ((unsigned)&ANSELL*8)+1;
+volatile bit ANSEL2 @ ((unsigned)&ANSELL*8)+2;
+volatile bit ANSEL3 @ ((unsigned)&ANSELL*8)+3;
+volatile bit ANSEL4 @ ((unsigned)&ANSELL*8)+4;
+volatile bit ANSEL5 @ ((unsigned)&ANSELL*8)+5;
+volatile bit ANSEL6 @ ((unsigned)&ANSELL*8)+6;
+volatile bit ANSEL7 @ ((unsigned)&ANSELL*8)+7;
+
+
+volatile bit ANSEL8 @ ((unsigned)&ANSELH*8)+0;
+volatile bit ANSEL9 @ ((unsigned)&ANSELH*8)+1;
+volatile bit ANSEL10 @ ((unsigned)&ANSELH*8)+2;
+volatile bit ANSEL11 @ ((unsigned)&ANSELH*8)+3;
+volatile bit ANSEL14 @ ((unsigned)&ANSELH*8)+6;
+volatile bit ANSEL15 @ ((unsigned)&ANSELH*8)+7;
+
+
+volatile bit ADEN @ ((unsigned)&ADCON0*8)+0;
+volatile bit ADON @ ((unsigned)&ADCON0*8)+1;
+volatile bit CHS0 @ ((unsigned)&ADCON0*8)+2;
+volatile bit CHS1 @ ((unsigned)&ADCON0*8)+3;
+volatile bit CHS2 @ ((unsigned)&ADCON0*8)+4;
+volatile bit CHS3 @ ((unsigned)&ADCON0*8)+5;
+
+volatile bit ADREF @ ((unsigned)&ADCON1*8)+0;
+volatile bit VHS0 @ ((unsigned)&ADCON1*8)+1;
+volatile bit VHS1 @ ((unsigned)&ADCON1*8)+2;
+volatile bit VHS2 @ ((unsigned)&ADCON1*8)+3;
+volatile bit ADCS0 @ ((unsigned)&ADCON1*8)+4;
+volatile bit ADCS1 @ ((unsigned)&ADCON1*8)+5;
+volatile bit ADCS2 @ ((unsigned)&ADCON1*8)+6;
+
+# 14 "holychip_define.h"
+typedef unsigned char BOOL;
+
+# 9 "inital.h"
+void inital(void);
+void sysinitial(void);
+void ramInitial(void);
+void T0_sysinitial(void);
+
+# 15 "key_1.h"
+extern unsigned char final_key;
+
+extern unsigned char key;
+void keymode0_configuration(void);
+void keymode1_configuration(void);
+void keymode2_configuration(void);
+void key_weiread(void);
+void key_tick(void);
+void DelayUs2x(unsigned char t);
+unsigned char key_check(unsigned char n);
+
+# 16 "PWM.h"
+void nPWM2(unsigned char m);
+void nPWM1(unsigned char n);
+
+# 4 "main.h"
+void DelayMs(unsigned int t);
+
+# 7 "heat.h"
+typedef enum
+{
+HEAT_MODE_OFF,
+HEAT_MODE_HALF,
+HEAT_MODE_ON
+} HeatMode;
+
+# 19
+extern HeatMode current_heat_mode;
+
+
+
+void hardware_set_heat(HeatMode mode);
+void hardware_pwm_control(uint8_t enable);
+void hardware_set_half_power(void);
+void hardware_stop_heat(void);
+void Heat_Init(void);
+void Heat_Start(void);
+void Heat_Stop(void);
+void Heat_SetMode(HeatMode mode);
+void Heat_Toggle(void);
+void HEAT_EnergySave(void);
+
+# 13 "E:\HCIDE_V3.0.18.S_3TEST\picc_compiler\include\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 28
+typedef signed short long int int24_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 43
+typedef unsigned char uint8_t;
+
+# 49
+typedef unsigned int uint16_t;
+
+# 56
+typedef unsigned short long int uint24_t;
+
+# 63
+typedef unsigned long int uint32_t;
+
+# 71
+typedef signed char int_least8_t;
+
+# 78
+typedef signed int int_least16_t;
+
+# 90
+typedef signed short long int int_least24_t;
+
+# 98
+typedef signed long int int_least32_t;
+
+# 105
+typedef unsigned char uint_least8_t;
+
+# 111
+typedef unsigned int uint_least16_t;
+
+# 121
+typedef unsigned short long int uint_least24_t;
+
+# 128
+typedef unsigned long int uint_least32_t;
+
+# 137
+typedef signed char int_fast8_t;
+
+# 144
+typedef signed int int_fast16_t;
+
+# 156
+typedef signed short long int int_fast24_t;
+
+# 164
+typedef signed long int int_fast32_t;
+
+# 171
+typedef unsigned char uint_fast8_t;
+
+# 177
+typedef unsigned int uint_fast16_t;
+
+# 187
+typedef unsigned short long int uint_fast24_t;
+
+# 194
+typedef unsigned long int uint_fast32_t;
+
+# 200
+typedef int32_t intmax_t;
+
+
+
+
+typedef uint32_t uintmax_t;
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 10 "motor1.h"
+<<<<<<< HEAD
+typedef enum
+{
+=======
+typedef enum {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+DIRECTION_FORWARD,
+DIRECTION_REVERSE
+} MotorDirection;
+
+
+<<<<<<< HEAD
+typedef enum
+{
+=======
+typedef enum {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+MODE_INITIAL,
+MODE_A,
+MODE_B,
+MODE_C
+} MotorMode;
+
+
+<<<<<<< HEAD
+typedef enum
+{
+=======
+typedef enum {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+SPEED_85,
+SPEED_70,
+SPEED_100,
+SPEED_COUNT
+} MotorSpeed;
+
+<<<<<<< HEAD
+
+
+
+typedef enum
+{
+=======
+# 38
+typedef enum {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+MODE_STATE_RUNNING,
+MODE_STATE_STOPPED
+} ModeState;
+
+
+<<<<<<< HEAD
+typedef struct
+{
+=======
+typedef struct {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+uint16_t work_duration;
+uint16_t stop_duration;
+uint8_t auto_dir_switch;
+uint16_t dir_switch_interval;
+} ModeParams;
+
+
+<<<<<<< HEAD
+typedef struct
+{
+=======
+typedef struct {
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+ModeState state;
+uint16_t timer;
+uint16_t dir_switch_timer;
+} ModeRuntime;
+
+
+void Motor_Init(void);
+void Motor_Start(void);
+void Motor_Stop(void);
+void Motor_ToggleDirection(void);
+void Motor_ToggleSpeed(void);
+void Motor_ToggleMode(void);
+MotorMode Motor_GetMode(void);
+void Motor_SetMode(MotorMode new_mode);
+MotorDirection Motor_GetDir(void);
+MotorSpeed Motor_GetSpeed(void);
+void Motor_Process(void);
+
+# 6 "motor1.c"
+static MotorDirection current_dir;
+static MotorMode current_mode;
+static MotorSpeed current_speed;
+
+
+static ModeParams mode_params;
+static ModeRuntime mode_runtime;
+
+
+static const uint16_t pwm_map[SPEED_COUNT] =
+{
+0XD2,
+0XB9,
+<<<<<<< HEAD
+0XF5
+=======
+0XF6
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+};
+
+# 29
+static void hardware_stop_motor(void)
+{
+nPWM1(0X00);
+nPWM2(0X00);
+}
+
+# 41
+static void hardware_set_motor(MotorDirection dir, MotorSpeed speed)
+{
+if (dir == DIRECTION_FORWARD)
+{
+nPWM1(pwm_map[speed]);
+nPWM2(0X00);
+}
+else
+{
+nPWM1(0X00);
+nPWM2(pwm_map[speed]);
+}
+}
+
+# 62
+void Motor_Init(void)
+{
+
+current_dir = DIRECTION_FORWARD;
+current_mode = MODE_INITIAL;
+current_speed = SPEED_85;
+
+
+mode_runtime.state = MODE_STATE_STOPPED;
+mode_runtime.timer = 0;
+mode_runtime.dir_switch_timer = 0;
+
+
+Motor_SetMode(MODE_INITIAL);
+
+hardware_stop_motor();
+}
+
+# 84
+void Motor_Start(void)
+{
+hardware_set_motor(current_dir, current_speed);
+}
+
+# 93
+void Motor_Stop(void)
+{
+hardware_stop_motor();
+}
+
+# 102
+void Motor_ToggleDirection(void)
+{
+Motor_Stop();
+
+
+current_dir = (current_dir == DIRECTION_FORWARD) ?
+DIRECTION_REVERSE : DIRECTION_FORWARD;
+}
+
+# 115
+void Motor_ToggleSpeed(void)
+{
+
+current_speed = (current_speed + 1) % SPEED_COUNT;
+
+
+hardware_set_motor(current_dir, current_speed);
+}
+
+# 128
+void Motor_ToggleMode(void)
+{
+Motor_Stop();
+
+
+current_mode = (current_mode + 1) % 4;
+
+<<<<<<< HEAD
+Motor_SetMode(current_mode);
+}
+
+# 143
+=======
+
+Motor_SetMode(current_mode);
+}
+
+# 144
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+MotorMode Motor_GetMode(void)
+{
+return current_mode;
+}
+
+<<<<<<< HEAD
+# 153
+=======
+# 154
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+void Motor_SetMode(MotorMode new_mode)
+{
+
+current_mode = new_mode;
+
+
+mode_runtime.timer = 0;
+mode_runtime.dir_switch_timer = 0;
+
+
+switch (new_mode)
+{
+case MODE_INITIAL:
+
+mode_params.work_duration = 60000;
+mode_params.stop_duration = 1000;
+mode_params.auto_dir_switch = 1;
+mode_params.dir_switch_interval = 60000;
+break;
+
+case MODE_A:
+
+mode_params.work_duration = 1500;
+mode_params.stop_duration = 500;
+mode_params.auto_dir_switch = 1;
+mode_params.dir_switch_interval = 60000;
+break;
+
+case MODE_B:
+
+mode_params.work_duration = 2000;
+mode_params.stop_duration = 500;
+mode_params.auto_dir_switch = 1;
+mode_params.dir_switch_interval = 0;
+break;
+
+case MODE_C:
+
+mode_params.work_duration = 1000;
+mode_params.stop_duration = 500;
+mode_params.auto_dir_switch = 0;
+mode_params.dir_switch_interval = 0;
+break;
+}
+
+
+mode_runtime.state = MODE_STATE_STOPPED;
+}
+
+<<<<<<< HEAD
+# 206
+=======
+# 207
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+void Motor_Process(void)
+{
+
+if (System_GetState() != SYSTEM_ON) return;
+
+
+if (mode_params.auto_dir_switch && mode_params.dir_switch_interval > 0)
+{
+if (mode_runtime.dir_switch_timer < 65535)
+{
+mode_runtime.dir_switch_timer++;
+}
+else
+{
+mode_runtime.dir_switch_timer = 0;
+}
+}
+
+
+if (mode_runtime.state == MODE_STATE_RUNNING)
+{
+
+if (mode_runtime.timer >= mode_params.work_duration)
+{
+Motor_Stop();
+mode_runtime.state = MODE_STATE_STOPPED;
+mode_runtime.timer = 0;
+
+
+if (current_mode == MODE_B && mode_params.auto_dir_switch)
+{
+Motor_ToggleDirection();
+}
+}
+else
+{
+if (mode_runtime.timer < 65535)
+{
+mode_runtime.timer++;
+}
+}
+}
+else
+{
+
+if (mode_runtime.timer >= mode_params.stop_duration)
+{
+Motor_Start();
+mode_runtime.state = MODE_STATE_RUNNING;
+mode_runtime.timer = 0;
+}
+else
+{
+if (mode_runtime.timer < 65535)
+{
+mode_runtime.timer++;
+}
+}
+}
+
+
+if (mode_params.auto_dir_switch &&
+mode_params.dir_switch_interval > 0 &&
+mode_runtime.dir_switch_timer >= mode_params.dir_switch_interval)
+{
+Motor_ToggleDirection();
+mode_runtime.dir_switch_timer = 0;
+Motor_Start();
+}
+}
+
+<<<<<<< HEAD
+# 281
+=======
+# 282
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+MotorDirection Motor_GetDir(void)
+{
+return current_dir;
+}
+
+<<<<<<< HEAD
+# 290
+=======
+# 291
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+MotorSpeed Motor_GetSpeed(void)
+{
+return current_speed;
+}
+

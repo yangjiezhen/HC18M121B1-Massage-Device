@@ -1,0 +1,86 @@
+[HC-IDE]
+Version=3.0.11.S
+[File Count]
+Count=16
+[MCU]
+PowerSupply=2
+[Settings]
+Device=HC18M121B1
+ConfigBitValue0=11384
+ConfigBitValue1=4037
+ConfigBitValue2=0
+Output=.
+PostBuild=0
+PostBuildCommand=
+Library=
+ConfigBitValue3=240
+ConfigBitValue4=16375
+[Files]
+OpenFileCounts=14
+File0=main.c|3 78 1351 78 570
+<<<<<<< HEAD
+File1=key_1.c|1 156 1481 156 511
+File2=key_1.h|1 182 1429 182 661
+File3=main.h|1 52 1325 52 537
+File4=HOLYCHIP_DEFINE.H|1 0 1273 0 485
+File5=ALL.h|1 156 1429 156 641
+File6=PWM.H|1 182 1455 182 667
+File7=PWM.c|1 130 1403 130 615
+File8=motor1.c|1 104 1377 104 589
+File9=heat.c|1 182 1455 182 667
+File10=inital.c|1 52 1325 52 537
+File11=inital.h|1 26 1299 26 511
+File12=heat.h|1 156 1429 156 641
+File13=motor1.h|1 52 1325 52 537
+=======
+File1=main.h|1 52 1325 52 537
+File2=motor1.c|1 104 1377 104 589
+File3=motor1.h|1 52 1325 52 537
+File4=PWM.H|1 182 1455 182 667
+File5=PWM.c|1 130 1403 130 615
+File6=heat.c|1 182 1455 182 667
+File7=key_1.c|1 104 1377 104 589
+File8=key_1.h|1 182 1429 182 661
+File9=HOLYCHIP_DEFINE.H|1 0 1273 0 485
+File10=ALL.h|1 156 1429 156 641
+File11=inital.c|1 52 1325 52 537
+File12=inital.h|1 26 1299 26 511
+File13=heat.h|1 156 1429 156 641
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+File14=power.h|1 78 1351 78 563
+File15=power.h|1 78 1351 78 563
+File16=inital.h|1 26 1299 26 511
+[Break]
+Count=0
+BP0=3 58 1
+BP1=3 59 1
+[Watch0]
+<<<<<<< HEAD
+Count=3
+Watch0=final_key 0
+Watch1=key 0
+Watch2=key_mode 0
+=======
+Count=0
+>>>>>>> 16c2da78393177047bb18bbd3999d792aeac5337
+[Watch1]
+Count=0
+[Watch2]
+Count=0
+[Project Files]
+File0=ALL.h
+File1=heat.c
+File2=heat.h
+File3=HOLYCHIP_DEFINE.H
+File4=inital.c
+File5=inital.h
+File6=key_1.c
+File7=key_1.h
+File8=main.c
+File9=main.h
+File10=motor1.c
+File11=motor1.h
+File12=power.c
+File13=power.h
+File14=PWM.c
+File15=PWM.H

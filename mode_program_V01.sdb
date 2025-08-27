@@ -1,0 +1,107 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16p122b1 ]
+[d frameptr 6 ]
+"62 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HCIDE_V3.0.13.S\picc_compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HCIDE_V3.0.13.S\picc_compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"18 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\inital.c
+[v _inital inital `(v  1 e 1 0 ]
+"45
+[v _sysinitial sysinitial `(v  1 e 1 0 ]
+"61
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+"56 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\main.c
+[v _main main `(v  1 e 1 0 ]
+"70
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+"19 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\pwm.c
+[v _PWM_inital PWM_inital `(v  1 e 1 0 ]
+"18 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HCIDE_V3.0.13.S\picc_compiler\include\hc16p122b1.h
+[v _INDF0 INDF0 `VEuc  1 e 1 @0 ]
+"22
+[v _FSR0L FSR0L `VEuc  1 e 1 @4 ]
+"23
+[v _FSR0H FSR0H `VEuc  1 e 1 @5 ]
+"27
+[v _INTCON INTCON `VEuc  1 e 1 @9 ]
+"29
+[v _TRISA TRISA `VEuc  1 e 1 @16 ]
+"30
+[v _TRISB TRISB `VEuc  1 e 1 @17 ]
+"31
+[v _PORTA PORTA `VEuc  1 e 1 @28 ]
+"32
+[v _PORTB PORTB `VEuc  1 e 1 @29 ]
+"33
+[v _WPUA WPUA `VEuc  1 e 1 @40 ]
+"34
+[v _WPUB WPUB `VEuc  1 e 1 @41 ]
+"35
+[v _WPDA WPDA `VEuc  1 e 1 @52 ]
+"36
+[v _WPDB WPDB `VEuc  1 e 1 @53 ]
+"37
+[v _IOCA IOCA `VEuc  1 e 1 @64 ]
+"38
+[v _IOCB IOCB `VEuc  1 e 1 @65 ]
+"39
+[v _PORCTR PORCTR `VEuc  1 e 1 @76 ]
+"50
+[v _PR2 PR2 `VEuc  1 e 1 @93 ]
+"51
+[v _T2CON T2CON `VEuc  1 e 1 @94 ]
+"57
+[v _OPTION OPTION `VEuc  1 e 1 @120 ]
+"59
+[v _OSCCON OSCCON `VEuc  1 e 1 @122 ]
+"63
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @131 ]
+"65
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @133 ]
+"66
+[v _ANSELL ANSELL `VEuc  1 e 1 @140 ]
+"67
+[v _ANSELH ANSELH `VEuc  1 e 1 @141 ]
+"134
+[v _TRISB2 TRISB2 `VEb  1 e 0 @138 ]
+"227
+[v _T2IF T2IF `VEb  1 e 0 @673 ]
+"246
+[v _T2ON T2ON `VEb  1 e 0 @754 ]
+"262
+[v _T2IE T2IE `VEb  1 e 0 @897 ]
+"285
+[v _WDTENS WDTENS `VEb  1 e 0 @972 ]
+"56 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"67
+} 0
+"45 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\inital.c
+[v _sysinitial sysinitial `(v  1 e 1 0 ]
+{
+"59
+} 0
+"61
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+{
+"86
+} 0
+"18
+[v _inital inital `(v  1 e 1 0 ]
+{
+"43
+} 0
+"19 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\pwm.c
+[v _PWM_inital PWM_inital `(v  1 e 1 0 ]
+{
+"32
+} 0
+"70 C:\Users\16478\Desktop\PICC±‡“Î∆˜\HC16P122A1_B1_C”Ô—‘¿˝≥Ã\HC16P122A1_B1_test_PWM_program\main.c
+[v _Timer0_Isr Timer0_Isr `II(v  1 e 1 0 ]
+{
+"78
+} 0
